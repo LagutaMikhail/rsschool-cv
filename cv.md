@@ -57,3 +57,16 @@ module.exports = function check(str, bracketsConfig) {
 }
 
 ```
+## Expirience
+
+- [CV project](https://lagutamikhail.github.io/rsschool-cv/cv)
+
+## Education
+
+- Command and engineering institute of the Ministry of Emergency Situations of Belarus - ingeneer of prevention and liquidation emergency situations
+- Rolling Scopes Scoll JS/FE stage 0 (in progress)
+
+## Languages:
+
+- Russian - native
+- English - A2
