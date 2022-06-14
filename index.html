@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/png/curriculum-vitae.png">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="#about-myself">About myself</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#skills">My skills</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#code">My code</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#expirience">My expirience</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#education">My education</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#languages">My languages</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">My contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section name-and-photo">
+        <img class="photo" src="./assets/jpg/photo.jpg" alt="My photo" />
+        <h1 class="name">Mikhail Lahuta</h1>
+      </section>
+      <section class="section about-myself" id="about-myself">
+        <h2>About myself</h2>
+        <img class="content-image" src="./assets/png/cv (1).png" alt="About me"/>
+        <p class="content">
+          I have experience in the field of prevention and liquidation emergency
+          situations. I am interested in front-end development, and in the
+          future I hope to change my profession.
+        </p>
+      </section>
+      <section class="section skills" id="skills">
+        <h2>My skills</h2>
+        <img class="content-image" src="./assets/png/pencil (1).png" alt="Skills"/>
+        <ul class="content">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS Basic</li>
+        </ul>
+      </section>
+      <section class="section code" id="code">
+        <h2>The example of my code</h2>
+        <img class="content-image code-image" src="./assets/png/web-development.png" alt="Code"/>
+        <div class="content code-container"><pre class="code-text"><code>
+module.exports = function check(str, bracketsConfig) {
+    let openBrackets =[];
+    for (let i=0; i&lt;bracketsConfig.length; i++){
+      openBrackets.push(bracketsConfig[i][0])
+    };
+    let closeBrackets =[];
+    for (let i=0; i&lt;bracketsConfig.length; i++){
+      closeBrackets.push(bracketsConfig[i][1])
+    };
+
+    let s = [];
+    for (let i = 0; i&lt;str.length; i++){
+      if (s.length==0&&closeBrackets.includes(str[i])){
+        return false;
+        break;
+      }
+      else if (openBrackets.includes(str[i])){
+        s.push(str[i]);
+      }
+      else if (closeBrackets.includes(str[i])&&s.length!==0){
+        bracketsConfig.forEach(function (item,index) {
+          if (item[1] == str[i]&&item[0]==s[s.length-1]){
+            s.pop();
+          };
+        });
+        }
+      else {
+        return false;
+        break;
+      }
+      }
+      return s.length==0;
+  }
+            </code></pre></div>
+      </section>
+      <section class="section expirience" id="expirience">
+        <h2>My expirience</h2>
+        <img class="content-image" src="./assets/png/project.png" alt="Expirience"/>
+        <ul class="content">
+          <li>
+            <a class="link" href="https://lagutamikhail.github.io/rsschool-cv/cv"
+              >CV projecct</a
+            >
+          </li>
+          <li>
+            <a class="link"
+              href="https://rolling-scopes-school.github.io/lagutamikhail-JSFEPRESCHOOL/portfolio/"
+              >Portfolio project</a
+            >
+          </li>
+          <li>
+            <a class="link"
+              href="https://rolling-scopes-school.github.io/lagutamikhail-JSFEPRESCHOOL/random-jokes/"
+              >Random jokes project</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="section education" id="education">
+        <h2>My education</h2>
+        <img class="content-image" src="./assets/png/education (1).png" alt="Education"/>
+        <ul class="content">
+          <li>
+            Command and engineering institute of the Ministry of Emergency
+            Situations of Belarus - ingeneer of prevention and liquidation
+            emergency situations
+          </li>
+          <li>Rolling Scopes Scoll JS/FE stage 0</li>
+        </ul>
+      </section>
+      <section class="section languages" id="languages">
+        <h2>My languages</h2>
+        <img class="content-image" src="./assets/png/languages (3).png" alt="languages"/>
+        <ul class="content">
+          <li>Russian - native</li>
+          <li>English - A2</li>
+        </ul>
+      </section>
+      <section class="section contacts" id="contacts">
+        <h2>My contacts</h2>
+        <img class="content-image" src="./assets/png/contact (2).png"/>
+        <ul class="content">
+          <li>Address: Vorovskogo str., Brest, Belarus</li>
+          <li>Phone: +375-29-527-80-10</li>
+          <li>E-mail: lagutamikhail@gmail.com</li>
+          <li>
+            <span>GitHub:</span>
+            <a class="link" href="https://github.com/LagutaMikhail/">LagutaMikhail</a>
+          </li>
+          <li>Discord: Mikhail Laguta (@LagutaMikhail)</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="github">
+        <a class="link" href="https://github.com/LagutaMikhail/"><img class="github-logo" src="./assets/png/github.png" alt="Github"/><span> My github</span></a>
+      </div>
+      <div class="year">
+        <span>2022</span>
+      </div>
+      <div>
+        <a class="link" href="https://rs.school/js/"><img class="logo" src="./assets/svg/rs_school_js.svg" alt="logo" /></a>
+      </div>
+    </footer>

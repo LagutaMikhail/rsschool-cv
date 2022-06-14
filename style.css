@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Cardo;
+    src: url(./assets/fonts/Cardo.zip);
+}
+@font-face {
+    font-family: Code;
+    src: url(./assets/fonts/Nanum_Gothic_Coding.zip);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    font-family: Cardo;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.header{
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, gray, #FFFFCC);
+    padding: 0 20px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+.nav-link{
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 25px;
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+.nav-link:link{
+    color: black;
+}
+.nav-link:visited{
+    color: black;
+}
+.nav-link:focus{
+    border: 3px solid yellow;
+    background-color: yellow;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    border: 3px solid yellow;
+    background-color: yellow;
+    padding: 12px;
+    transition: 0.5s;
+}
+.nav-link:active{
+    color: yellow;
+}
+.main{
+    background-color: #FFFFCC;
+}
+.section{
+    margin: 20px;
+}
+.name-and-photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1{
+    font-size: 64px;
+    padding: 30px 0 0 10px;
+}
+.photo{
+    max-width: 50%;
+    border-radius: 20px;
+}
+h2{
+    font-size: 48px;
+    text-align: center;
+    margin: 30px 0;
+}
+.content-image{
+    width: 100px;
+    position: absolute;
+}
+.content{
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-position: inside;
+}
+.code-text{
+    border: 10px solid gray;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+code{
+    width: 600px;
+    font-family: Code;
+    line-height: 1.2;
+    font-size: 24px;
+}
+.link{
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px black dotted;
+    border-radius: 20px;
+    color: black;
+}
+.link:focus{
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: yellow;
+    transition: 0.5s;
+}
+.link:hover{
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: yellow;
+    transition: 0.5s;
+}
+.link:active{
+    color: yellow;
+}
+.footer{
+    background: linear-gradient(to bottom, #FFFFCC, gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+.github-logo{
+    width: 20px;
+}
+.logo{
+    width: 90px;
+}
+@media (max-width:950px) {
+    .code-image{
+        display: none;
+    }
+    .code-container{
+        margin-left: 0;  
+    }
+    .code-text{
+        margin-right: 0;
+    } 
+}
+@media (max-width: 760px) {
+    .content-image{
+        display: none;
+    }
+    .content{
+        margin-left: 0;
+    }
+    code{
+        font-size: 16px;
+        width: 300px;
+    }
+    .code-text{
+        margin-right: 0;
+    }
+}
