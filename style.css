@@ -1,1 +1,11 @@
-style
+@font-face {
+    font-family: Cardo;
+    src: url(./assets/fonts/Cardo.zip);
+}
+@font-face {
+    font-family: Code;
+    src: url(./assets/fonts/Nanum_Gothic_Coding.zip);
+}
+*{
+    box-sizing: border-box;
+}
