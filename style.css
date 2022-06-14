@@ -21,4 +21,56 @@ body{
     min-height: 100vh;
     justify-content: space-between;
     font-family: Cardo;
+    line-height: 1.5;
+}
+.header{
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, gray, #FFFFCC);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link{
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 25px;
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+.nav-link:link{
+    color: black;
+}
+.nav-link:visited{
+    color: black;
+}
+.nav-link:focus{
+    border: 3px solid yellow;
+    background-color: yellow;
+    padding: 15px;
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+.nav-link:hover{
+    border: 3px solid yellow;
+    background-color: yellow;
+    padding: 15px;
+    transition: 0.5s;
+    font-size: 1.5em;
+    border-radius: 35px;
+}
+.nav-link:active{
+    color: yellow;
+}
+.main{
+    background-color: #FFFFCC;
+}
+.footer{
+    background: linear-gradient(to bottom, #FFFFCC, gray)
 }
